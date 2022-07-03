@@ -16,6 +16,6 @@ app.use(Bodyparser.urlencoded({extended:true}))
 app.use(Bodyparser.json())
 app.use('/stud',studrouter)
                     
-app.listen(3550,(req,res)=>{
+app.listen(  process.env.PORT || 3550,(req,res)=>{
     console.log("server is  running")
 })
